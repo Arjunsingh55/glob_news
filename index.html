@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOB NEWS</title>
+    <link rel="stylesheet" href="/glob_news/style.css">
+    <link rel="icons" href="/glob_news/image/mike.png">
+
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a class="company-logo" href="" onclick="reload()">
+                <img src="/glob_news/image/GlobNews.png" alt="logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="home" onclick="reload()">Home</li>
+                    <li class="hover-link nav-item" id="world" onclick="onNavItem('world')">World</li>
+                    <li class="hover-link nav-item" id="business" onclick="onNavItem('business')">Business</li>
+                    <li class="hover-link nav-item" id="tech" onclick="onNavItem('tech')">Tech</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItem('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="entertainment" onclick="onNavItem('entertainment')">Entertainment</li>
+                    <li class="hover-link nav-item" id="health" onclick="onNavItem('health')">Health</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" class="news-input" type="text" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-image">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">this is title</h3>
+                <h6 class="news-source" id="news-source">this is h6</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, vero.</p>
+            </div>
+        </div>
+
+    </template>
+    <footer>
+        <p style="padding-top: 10px;">
+            © 2023 | GLOB NEWS
+        </p>
+        <script src="/glob_news/script.js"></script>
+</body>
+
+</html>
